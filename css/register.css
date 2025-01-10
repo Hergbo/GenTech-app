@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(247, 244, 244);
+    background-size: cover;
+    background-position: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.contact{
+    position: relative;
+    width: auto;
+    height: auto;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px  rgba(8, 8, 8, 0.493);
+    background: white;
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact h2{
+    font-size: 40px;
+    color: #fd0238;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact form{
+    width: 300px;
+    text-align: center;
+ }
+
+form .input-box{
+    display: block;
+    justify-content: space-between;
+}
+.input-box .input-field{
+    width: 100%;
+}
+
+ .field .item{
+    width: 100%;
+    padding: 10px;
+    background: whitesmoke;
+    border: 1px solid rgb(254, 255, 255);
+    outline: none;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #000000;
+    margin: 12px 0;
+ }
+
+ .field.error .item{
+    border-color: rgb(255, 0, 0);
+ }
+ .field .item::placeholder{
+    color: rgb(90, 88, 88);
+ }
+
+ .field .item:focus{
+    background: #f5f4f4;
+    color: black;
+ }
+ .field .item:focus::placeholder{
+    color: black;
+
+ }
+ .field .error-txt{
+    font-size: 14.5px;
+    color: #fd1111;
+    text-align: left;
+    margin: -10px 10px 10px;
+    display: none;
+ }
+ .field.error .error-txt{
+   display: block;
+ }
+
+ .submit{
+    padding: 12px 32px;
+    background: rgb(183, 184, 184);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #033e50;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: .3s;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+ }
+
+ form button:hover{
+   background: #fd0238;
+   color: #fafafa;
+    box-shadow: none;
+ }
+ form a{
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    color: #ff0000;
+    cursor: pointer;
+    transition: .3s;
+ }
+
+ form a:hover{
+   color: #17d610;
+   font-size: large;
+ }
+
+@media screen and (max-width: 960px) {
+   .contact{
+      width: 300px;
+   }
+   .contact h2{
+      font-size: 30px;
+   }
+
+   .contact form{
+      width: 220px;
+   }
+
+   form button{
+      width: 130px;
+      font-size: 1rem;
+   }
+
+   form a{
+      font-size: 10px;
+   }
+
+   .field .error-txt{
+      font-size: 12px;
+   }
+}
+
+.popup{
+   width: 450px;
+   height: 35vh;
+   background: aquamarine;
+   border-radius: 6px;
+   position: absolute;
+   top: 0;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(0.1);
+   text-align: center;
+   padding: 0 30px;
+   color: #000000;
+   margin-top: -25%;
+   visibility: hidden;
+   transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+   visibility: visible;
+   top: 50%;
+   transform: translate(-50%, -50%) scale(1);
+}
+
+
+.popup p{
+   margin-top: 15px;
+}
+.popup img{
+   width: 130px;
+   margin-top: -20%;
+   border-radius: 50%;
+   box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.ok__btn{
+   width: 80%;
+   margin-top: 20px;
+   padding: 10px 0;
+   background: #17d610;
+   color: #fff;
+   border: 0;
+   outline: none;
+   font-size: 15px;
+   border-radius: 4px;
+   cursor: pointer;
+   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+ 
+}
+
+.ok__btn:hover{
+   background: #046b01;
+   transform: scale(1.075);
+   transition: all 0.3s;
+}
+
+@media screen and (max-width: 960px) {
+   .popup{
+      width: 340px;
+      height: 40vh;
+   }
+}

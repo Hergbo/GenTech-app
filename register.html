@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration page</title>
+
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <div class="contact">
+        <h2>Registration</h2>
+
+        <form action="#" >
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="First Name" id="name" class="item" autocomplete="off" title="please put in your first name " >
+                    <div class="error-txt">First Name can't be blank!</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Last Name" id="name" class="item" autocomplete="off" title="please put in your last name">
+                    <div class="error-txt">Last Name can't be blank!</div>
+                </div>
+                <div  class="input-field field">
+                    <input type="text" placeholder="Email Address" id="email" class="item" autocomplete="off" title="please put in a valid Email" >
+                    <div class="error-txt email">Email Address can't be blank!</div>
+                </div>
+                <div  class="input-field field">
+                    <input type="number" placeholder="Phone Number" id="phone" class="item" autocomplete="off" title="please put in your Phone Number" >
+                    <div class="error-txt">Phone Number can't be blank!</div>
+                </div>
+            </div>
+
+            <div class="container">
+                <button type="submit" class="submit" onclick="openPopup()">Register</button>
+                    <div class="popup" id="popup">
+                        <img src="images/check.png" alt="">
+                        <h2>Thank You!</h2>
+                        <p>Your details has been successfully submitted. <br> Thanks!</p>
+                        <a href="index.html"><button type="button" class="ok__btn" onclick="closePopup()">OK</button></a>
+                    </div>   
+                <a href="index.html" class="reg">Continue your Research </a>
+            </div>
+        </form>
+
+    </div>
+
+
+
+
+ 
+    <script defer src="register.js"></script>
+</body>
